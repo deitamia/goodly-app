@@ -1,0 +1,10 @@
+Goodly — start here Version 0.3 · October 03, 2026
+
+This is the current preparation kit for Goodly. It includes the accepted decisions so far, the ready English texts, the structure of the public site and both panels, design guidelines, translations, retention periods, and general instructions for the agents.
+
+**What you can do now** Extract the package into a separate folder for Goodly on your Kali. Do not place it inside another existing project. Read README.md. English is used for easier interaction with all agents. Finish the local audit you are already running. You do not need to restart it because of this package. Give me the result. Then we will determine the technologies, services, ports, and exact local settings. When we decide to start actual development, use `prompts/project-intake.md` to begin a new session.
+
+**What hasn't been chosen yet** There is no final framework, database, ORM, provider for login/email/translations, hosting plan, or specific ports. The local environment files describe the requirements and placeholders to fill in; they are not ready-to-use setup commands. No code, Docker configuration, migrations, or .env files have been created yet. The Terms and Privacy Policy still require final data and separate preparation. The development plan is a proposed workflow, not authorization for the agent to start everything automatically.
+
+**To ensure agents work on a single plan** AGENTS.md is the main entry point. CLAUDE.md includes it for Claude Code. Instruction support in the installed versions of Codex and AGY must be confirmed by the audit. You do not need to copy the same rules into multiple files or change their global settings. The recommended starting mode is one agent editing, with a clear handover note to the next. This reduces the risk of simultaneous changes to the same files. This is a working recommendation; we can change it if you decide to. The current package replaces conflicting rules from the old documents 01–07. Use this kit as the baseline so that old decisions—like a public real name, manual approval for every listing, or the lack of a Contact page—do not return.
+

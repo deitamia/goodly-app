@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#fafafa] text-[#111827] font-sans antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Custom Goodly Aesthetic Utilities */
+.hero-gradient {
+  background-color: #f0fdf4; /* Pale light green background per spec */
+  border-bottom: 1px solid #dcfce7;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on desktop */
+  }
+}
+
+/* Card 4:3 Contained Image */
+.card-image-container {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Full image visible, never cropped */
+}
+
+/* Focus and accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
+}
